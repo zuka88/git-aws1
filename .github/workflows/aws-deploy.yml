@@ -4,7 +4,7 @@ name: aws-deploy
 on:
 
   push:
-    branches: [master ]
+    branches: [master]
  
 jobs:
   build:
@@ -19,3 +19,5 @@ jobs:
               
         -  run: |
             aws s3 sync . s3://zuka-github
+          
+ 
